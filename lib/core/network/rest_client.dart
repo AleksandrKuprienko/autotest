@@ -9,5 +9,5 @@ abstract class RestClient {
   factory RestClient(Dio dio, {String baseUrl}) = _RestClient;
 
   @GET('/nomer/{number}')
-  Future<NumberInfoModel> getTasks(@Path('number') String number);
+  Future<NumberInfoModel> fetchNomer(@Path('number') String number);
 }
